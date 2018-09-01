@@ -1,0 +1,104 @@
+/* indian flower font */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower'); 
+
+body
+{
+    text-align: center;
+    font-style: italic;
+    background: url('Food.jpg');
+    background-size: 100%;
+    font-family: 'Indie Flower', cursive;
+}
+img
+{ 
+    width: 100px;
+    height: 100px;
+    vertical-align: middle; /* to make img inmiddle vertically to whatever next to it, in my case h2 text */
+    display: inline-block; /* to display this text next to img as a block*/
+    transition: 1s;
+}
+
+.round
+{
+    animation-name: rotation;
+    animation-duration: 2s;
+}
+img:hover
+{
+    transform: rotate(360deg); /* rotate 360 degree*/
+}
+
+.images
+{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-right: 600px;
+}
+
+img
+{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+h1, p, footer
+{
+    margin: 10px;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.center
+{
+    padding-left: 500px;
+    padding-top: 150px;
+}
+
+.round
+{
+    border-radius: 70%;
+}
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+h1
+{
+    animation-name: Quote;
+    animation-duration: 1s;
+}
+@keyframes Quote
+{
+    from
+    {
+        transform: translatey(500px);
+    }
+    to
+    {
+        transform: translatey(0);
+    }
+}
+
+.B2:hover, .B1:hover
+{
+    color: whitesmoke;
+    background-color: #31A6FF;
+}
+.B1, .B2
+{
+    color: black;
+    border: solid 2px #31A6FF; /* to make solid border for a thickness of 2px with a blue color*/
+    border-radius: 50px; /* to make borders a bit round */
+    padding: 10px 20px;
+    text-decoration: none; /* to remove the underline that makes it looks like a link*/
+
+}
